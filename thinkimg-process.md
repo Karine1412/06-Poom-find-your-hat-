@@ -106,14 +106,30 @@
 # <p style="display: flex; align-items: center; gap: 0.5em;"><span style="font-weight:bold; color: white; background-color: lightSeaGreen; padding: 0.5rem 2rem;">WRITE YOUR THINKING PROCESS BELOW.</span><span style="font-weight:bold; color: white; background-color: lightSeaGreen; padding: 0.5rem 0;">&nbsp;</span></p>
 
 <!-- Thinking Process -->
+แนวคิดคือการทำ minigame เล็กๆให้ออกมาเล่นและควบคุมได้บน terminal
 <!-- 1. Workflow Planning -->
-<!-- 2.1. Board Functions (Hardcoded) -->
-<!-- 2.2. Board Functions (Generated) -->
-<!-- 3. Input Functions -->
-<!-- 4. Movement Functions -->
-<!-- 5. Game Rule Functions -->
-<!-- 6. Game Play Loop -->
 
+<!-- 2.1. Board Functions (Hardcoded) -->
+ดึงตัวแปร board มาทำเป็น function เพื่อปริ้นออกมาให้อยู่ในรูปแบบตารางของเกมโดยใช้เป็น
+function printBoard(board) และใช้ .map กับ .join
+
+<!-- 2.2. Board Functions (Generated) -->
+ใส่ function เข้าไปในตาราง เช่น PLAYER, HAT, HOLES, EMPTY, playerCol/Row
+
+<!-- 3. Input Functions -->
+input ที่ใช้จะเป็นการนำ string ทั้ง 4 คือ WASD ที่เชื่อมด้วย PromptSync เพื่อที่จะให้
+ผู้เล่นสามารถขยับตอนเล่นเกมได้
+
+<!-- 4. Movement Functions -->
+นำ input ก่อนหน้ามาทำเป็น Condition โดยใช้ If Else เพื่อให้ขยับไปตามที่ผู้เล่นต้องการ
+
+<!-- 5. Game Rule Functions -->
+1.ต้องเดินไปรับหมวกตามทางโดยห้ามโดนอุปสรรค
+2.ห้ามเดินออกนอกแมพ
+3.รับหมวกได้ผู้เล่นจะชนะทันที
+
+<!-- 6. Game Play Loop -->
+ใช้ while(playing) ในการ loop หรือ เริ่มเกมใหม่ถ้าจบเกม
 [Back to Table of Contents](#table-of-contents)
 
 ---
