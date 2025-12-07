@@ -108,7 +108,7 @@
 <!-- Thinking Process -->
 แนวคิดคือการทำ minigame เล็กๆให้ออกมาเล่นและควบคุมได้บน terminal
 <!-- 1. Workflow Planning -->
-
+การทำ Workflow โดยเริ่มจากจุด start game ไปจนถึง ending loop
 <!-- 2.1. Board Functions (Hardcoded) -->
 ดึงตัวแปร board มาทำเป็น function เพื่อปริ้นออกมาให้อยู่ในรูปแบบตารางของเกมโดยใช้เป็น
 function printBoard(board) และใช้ .map กับ .join
@@ -133,3 +133,6 @@ input ที่ใช้จะเป็นการนำ string ทั้ง 4 
 [Back to Table of Contents](#table-of-contents)
 
 ---
+![06_Poom image_boardgame](Board_game.png)
+![06_Poom image_win_the_game](win_the-game.png)
+![06_Poom image_Flowchart](Flowchart.png)
